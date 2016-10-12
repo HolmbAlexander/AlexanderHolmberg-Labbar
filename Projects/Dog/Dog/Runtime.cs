@@ -8,54 +8,92 @@ namespace Dog
 {
     class Runtime
     {
-        List<Dog> dogs = new List<Dog>()
-            {
-            new Dog { Name = "Fido", Age = 6, Breed = "Pitbull" },
-            new Dog { Name = "Bubben", Age = 2, Breed = "Golden Retriver" },
-            new Dog { Name = "Schmitzel", Age = 4, Breed = "Weiner" },
-            };
-
+        List<Dog> dogList = new List<Dog>();
+        bool gameLoop = false;
         public void Start()
         {
-            Menu();
-
+            do
+            {
+                Menu();
+            } while (gameLoop == false);
         }
-        private void Menu()
+        void Menu()
         {
             bool loop = false;
             do
             {
-                loop = false;
-                Console.WriteLine("Press a number beetwen 1-4 to continue...");
-                var input = Console.ReadKey(true).Key;
+                MenuText();
 
+                loop = false;
+                var input = Console.ReadKey(true).Key;
                 switch (input)
                 {
                     case ConsoleKey.D1:
-                        Console.WriteLine("Add dog");
+                        AddDog();
                         break;
                     case ConsoleKey.D2:
-                        Console.WriteLine("Remove dog");
+                        RemoveDog();
                         break;
                     case ConsoleKey.D3:
                         ShowDogs();
                         break;
                     case ConsoleKey.D4:
-                        Environment.Exit(0);
+                        gameLoop = true;
                         break;
                     default:
+                        Console.Clear();
                         loop = true;
                         break;
                 }
             } while (loop);
         }
+        void MenuText()
+        {
+            Console.Clear();
+            Console.WriteLine("1: Add a dog to list");
+            Console.WriteLine("2: Remove a dog from list");
+            Console.WriteLine("3: Show list of all dogs");
+            Console.WriteLine("4: Quit");
+            Console.WriteLine();
+            Console.WriteLine("Press a number between 1-4 to continue...");
+        }
         void ShowDogs()
         {
-            foreach (var Dog in dogs)
+            Console.Clear();
+            int i = 0;
+            foreach (var Dog in dogList)
             {
-                Console.WriteLine(Dog.DogIntroduction());
-                Console.WriteLine();
+                Console.WriteLine(i+Dog.DogIntroduction());
+                i++;
             }
+            Console.ReadLine();
+            
+        }
+        void AddDog()
+        {
+            Console.Clear();
+            Console.Write("Breed: ");
+            string breed = Console.ReadLine();
+            Console.Write("Name: ");
+            string name = Console.ReadLine();
+            Console.Write("Age(in human years): ");
+            int age = int.Parse(Console.ReadLine());
+
+            Dog newDog = new Dog
+            {
+                Breed = breed,
+                Name = name,
+                Age = age
+            };
+            dogList.Add(newDog);
+        }
+        void RemoveDog()
+        {
+            ShowDogs();
+            Console.WriteLine("Enter a number you like to remove: ");
+            int input = int.Parse(Console.ReadLine());
+            dogList.RemoveAt(input);
+            Console.Clear();
         }
     }
 }

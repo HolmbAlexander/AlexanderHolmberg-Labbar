@@ -25,8 +25,7 @@ namespace Dog
 
         public string DogIntroduction()
         {
-
-            return String.Format("This {0}´s name is {1} and is {2} years old.", Breed, Name, Age);
+            return String.Format(": {0}´s name is {1} and is {2} years old.", Breed, Name, Age);
         }
     }
 }
