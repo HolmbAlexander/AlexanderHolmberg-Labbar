@@ -63,7 +63,8 @@ namespace Dog
             int i = 0;
             foreach (var Dog in dogList)
             {
-                Console.WriteLine(i+Dog.DogIntroduction());
+                Console.WriteLine(i + Dog.DogIntroduction());
+                
                 i++;
             }
             Console.ReadLine();
