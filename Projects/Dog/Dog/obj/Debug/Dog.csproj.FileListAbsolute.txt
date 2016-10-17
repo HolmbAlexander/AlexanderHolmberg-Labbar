@@ -10,3 +10,6 @@ C:\Users\Alexander Holmberg\Documents\Inlämningar Labbar\Projects\Dog\Dog\obj\D
 C:\Users\Alexander Holmberg\Documents\Inlämningar Labbar\Projects\Dog\Dog\bin\Debug\Dog.exe
 C:\Users\Alexander Holmberg\Documents\Inlämningar Labbar\Projects\Dog\Dog\bin\Debug\Dog.pdb
 C:\Users\Alexander Holmberg\Documents\Inlämningar Labbar\Projects\Dog\Dog\obj\Debug\Dog.csprojResolveAssemblyReference.cache
+C:\Users\Alexander Holmberg\Documents\OOP\Inlämningar Labbar OOP\Projects\Dog\Dog\bin\Debug\Dog.exe.config
+C:\Users\Alexander Holmberg\Documents\OOP\Inlämningar Labbar OOP\Projects\Dog\Dog\obj\Debug\Dog.exe
+C:\Users\Alexander Holmberg\Documents\OOP\Inlämningar Labbar OOP\Projects\Dog\Dog\obj\Debug\Dog.pdb
