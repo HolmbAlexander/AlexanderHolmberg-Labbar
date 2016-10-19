@@ -3,7 +3,7 @@
   <Class Name="Labb3.Evangemang">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAAAAEAAgAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAAAIAAAAAAEAAAAAAAAAAAACAAAAAAAAAAg=</HashCode>
       <FileName>Evangemang\Evangemang.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -26,13 +26,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Evangemang\Festival\Festival.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Labb3.Användare">
-    <Position X="11" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Användare.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

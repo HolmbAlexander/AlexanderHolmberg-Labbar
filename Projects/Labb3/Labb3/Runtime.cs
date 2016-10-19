@@ -8,9 +8,6 @@ namespace Labb3
 {
     class Runtime
     {
-        //List<Konserter> konserterList = new List<Konserter>();
-        //List<Filmer> filmerList = new List<Filmer>();
-        //List<Festivaler> festivalerList = new List<Festivaler>();
         Menus menus = new Menus();
         public void Start()
         {

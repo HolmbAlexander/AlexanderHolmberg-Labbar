@@ -17,5 +17,13 @@ namespace Labb3
                                  FestivalGenre,
                                  AntalDagar);
         }
+
+        public override string BokningNamn()
+        {
+            return String.Format("{0} Genre: {1}. Dagar: {2}. ",
+                                 base.BokningNamn(),
+                                 FestivalGenre,
+                                 AntalDagar);
+        }
     }
 }

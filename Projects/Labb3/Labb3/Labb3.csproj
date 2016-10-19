@@ -44,12 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddMetoder.cs" />
-    <Compile Include="Användare.cs" />
     <Compile Include="Evangemang\Evangemang.cs" />
     <Compile Include="Evangemang\Festival\Festival.cs" />
     <Compile Include="Evangemang\Film\Film.cs" />
     <Compile Include="Evangemang\Konsert\Konsert.cs" />
-    <Compile Include="List.cs" />
+    <Compile Include="EventManager.cs" />
     <Compile Include="Menus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

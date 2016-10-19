@@ -8,29 +8,35 @@ namespace Labb3
 {
     class Menus
     {
+        EventManager  eventManager = new EventManager();
+        
+        
         public void VälkomstMeny()
         {
+            
             bool loop = false;
             do
             {
-            Console.WriteLine("Välkommen att boka ditt evangemang!");
-            Console.WriteLine("1: Boka evangemang.");
-            Console.WriteLine("2: Se dina bokade evangemang.");
-            Console.WriteLine("3: Avsluta.");
+                Console.Clear();
+                Console.WriteLine("Välkommen att boka ditt evangemang!");
+                Console.WriteLine("1: Boka evangemang.");
+                Console.WriteLine("2: Se dina bokade evangemang.");
+                Console.WriteLine("3: Avsluta.");
             var input = Console.ReadKey(true).Key;
 
                 switch (input)
                 {
                     case ConsoleKey.D1: ValEvangemang(); break;
-                    case ConsoleKey.D2: break;
+                    case ConsoleKey.D2: eventManager.ShowBookings(); loop = true; break;
                     case ConsoleKey.D3: Environment.Exit(0); break;
                     default: Console.Clear(); loop = true; break;
                 }
             } while (loop);
         }
-
+        
         public void ValEvangemang()
         {
+            Console.Clear();
             bool loop = false;
             do
             {
@@ -42,12 +48,14 @@ namespace Labb3
 
                 switch (input)
                 {
-                    case ConsoleKey.D1: break;
-                    case ConsoleKey.D2: break;
-                    case ConsoleKey.D3: break;
+                    case ConsoleKey.D1: eventManager.ShowFestival(); eventManager.BokaFestival(); break;
+                    case ConsoleKey.D2: eventManager.ShowKonsert();  eventManager.BokaKonsert();  break;
+                    case ConsoleKey.D3: eventManager.ShowFilm();     eventManager.BokaFilm();  break;
+                    default: Console.Clear(); loop = true; break;
                 }
 
             } while (loop);
+            VälkomstMeny();
         }
     }
 }
