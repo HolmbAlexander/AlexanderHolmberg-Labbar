@@ -52,7 +52,6 @@
     <Compile Include="Vehicle\Bike\MotorbikeNew.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Runtime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
