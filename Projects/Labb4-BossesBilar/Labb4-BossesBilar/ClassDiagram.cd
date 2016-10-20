@@ -1,2 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Labb4_BossesBilar.Vehicle">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAIAAgACAAAAAA=</HashCode>
+      <FileName>Vehicle\Vehicle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb4_BossesBilar.CarNew">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAA=</HashCode>
+      <FileName>Vehicle\Car\CarNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb4_BossesBilar.MotorbikeNew">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAA=</HashCode>
+      <FileName>Vehicle\Bike\MotorbikeNew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb4_BossesBilar.MotorbikeUsed">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Vehicle\Bike\MotorbikeUsed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Labb4_BossesBilar.CarUsed">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Vehicle\Car\CarUsed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

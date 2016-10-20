@@ -8,5 +8,10 @@ namespace Labb4_BossesBilar
 {
     class Runtime
     {
+        Menus menus = new Menus();
+        public void Start()
+        {
+            menus.WelcomeMenu();
+        }
     }
 }

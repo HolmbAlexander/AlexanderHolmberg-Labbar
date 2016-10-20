@@ -10,6 +10,8 @@ namespace Labb4_BossesBilar
     {
         static void Main(string[] args)
         {
+            Runtime runtime = new Runtime();
+            runtime.Start();
         }
     }
 }
