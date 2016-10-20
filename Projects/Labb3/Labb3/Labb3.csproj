@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddMetoder.cs" />
     <Compile Include="Evangemang\Evangemang.cs" />
     <Compile Include="Evangemang\Festival\Festival.cs" />
     <Compile Include="Evangemang\Film\Film.cs" />
@@ -52,7 +51,6 @@
     <Compile Include="Menus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Runtime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

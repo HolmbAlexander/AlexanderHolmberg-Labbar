@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labb3
+namespace Labb4_BossesBilar
 {
-    class Runtime
+    class Program
     {
-        Menus menus = new Menus();
-        public void Start()
+        static void Main(string[] args)
         {
-            menus.VälkomstMeny();
         }
     }
 }

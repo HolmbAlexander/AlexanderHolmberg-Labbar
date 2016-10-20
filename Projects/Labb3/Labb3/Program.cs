@@ -10,8 +10,8 @@ namespace Labb3
     {
         static void Main(string[] args)
         {
-            Runtime runtime = new Runtime();
-            runtime.Start();
+            Menus menus = new Menus();
+            menus.VälkomstMeny();
         }
     }
 }
