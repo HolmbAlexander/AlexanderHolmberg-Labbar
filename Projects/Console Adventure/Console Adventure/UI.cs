@@ -220,7 +220,6 @@ namespace Console_Adventure
                     Console.WriteLine("4: Leave the room.");
                     Console.WriteLine("5: Leave this awfull tower.");
                     var isExitAction = Console.ReadKey(true).Key;
-
                     switch (isExitAction)
                     {
                         case ConsoleKey.D1:
