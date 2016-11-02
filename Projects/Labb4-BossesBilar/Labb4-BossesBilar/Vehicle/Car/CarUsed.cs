@@ -2,20 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Labb4_BossesBilar
+namespace Labb4_BossesBilar.Vehicle.Car
 {
-    public class CarUsed : Vehicle
+    class CarUsed
     {
-        public int Owners { get; set; }
-        public int Mileage { get; set; }
-
-        public override string BasicInfo()
-        {
-            return String.Format("{0} | Owners: {1}. | Mileage: {2}",
-                                 base.BasicInfo(),
-                                 Owners,
-                                 Mileage);
-        }
     }
 }

@@ -19,10 +19,10 @@ namespace Labb4_BossesBilar
         };
         List<CarUsed> usedCarList = new List<CarUsed>
         {
-            new CarUsed { Maker = "Volvo",  Model = "V70",        Amount = 4, Price = 18995, Mileage = 23500, Owners = 4},
-            new CarUsed { Maker = "Fiat",   Model = "Qubo",       Amount = 3, Price = 35995, Mileage = 12250, Owners = 2},
-            new CarUsed { Maker = "Hyndai", Model = "Accent",     Amount = 4, Price = 8995,  Mileage = 18750, Owners = 3},
-            new CarUsed { Maker = "BMW",    Model = "NoBlinkers", Amount = 2, Price = 95000, Mileage = 12000, Owners = 1}
+            new CarUsed { Maker = "Volvo",  Model = "V70",        Amount = 1, Price = 18995, Mileage = 23500, Owners = 4},
+            new CarUsed { Maker = "Fiat",   Model = "Qubo",       Amount = 1, Price = 35995, Mileage = 12250, Owners = 2},
+            new CarUsed { Maker = "Hyndai", Model = "Accent",     Amount = 1, Price = 8995,  Mileage = 18750, Owners = 3},
+            new CarUsed { Maker = "BMW",    Model = "NoBlinkers", Amount = 1, Price = 95000, Mileage = 12000, Owners = 1}
         };
         List<MotorbikeNew> newBikeList = new List<MotorbikeNew>
         {
@@ -33,10 +33,10 @@ namespace Labb4_BossesBilar
         };
         List<MotorbikeUsed> usedBikeList = new List<MotorbikeUsed>
         {
-            new MotorbikeUsed { Maker = "Honda",           Model = "Vrumm",  Amount = 3, Price = 35995,  Mileage = 12500, Owners = 1},
-            new MotorbikeUsed { Maker = "Harley Davidson", Model = "V rod",  Amount = 4, Price = 349995, Mileage = 8500,  Owners = 1},
-            new MotorbikeUsed { Maker = "Jamwa",           Model = "TWS 50", Amount = 6, Price = 15000,  Mileage = 15000, Owners = 3},
-            new MotorbikeUsed { Maker = "Yamaha",          Model = "R25",    Amount = 3, Price = 275000, Mileage = 13500, Owners = 2}
+            new MotorbikeUsed { Maker = "Honda",           Model = "Vrumm",  Amount = 1, Price = 35995,  Mileage = 12500, Owners = 1},
+            new MotorbikeUsed { Maker = "Harley Davidson", Model = "V rod",  Amount = 1, Price = 349995, Mileage = 8500,  Owners = 1},
+            new MotorbikeUsed { Maker = "Jamwa",           Model = "TWS 50", Amount = 1, Price = 15000,  Mileage = 15000, Owners = 3},
+            new MotorbikeUsed { Maker = "Yamaha",          Model = "R25",    Amount = 1, Price = 275000, Mileage = 13500, Owners = 2}
         };
         #endregion
 

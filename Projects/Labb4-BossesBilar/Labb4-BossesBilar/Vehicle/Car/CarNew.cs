@@ -2,20 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Labb4_BossesBilar
+namespace Labb4_BossesBilar.Vehicle.Car
 {
-    public class CarNew : Vehicle
+    class CarNew
     {
-        public int FreeScervice { get; set; }
-        public string Color { get; set; }
-
-        public override string BasicInfo()
-        {
-            return String.Format("{0} | Free service years: {1}. | Color: {2}. ",
-                                 base.BasicInfo(),
-                                 FreeScervice,
-                                 Color);
-        }
     }
 }

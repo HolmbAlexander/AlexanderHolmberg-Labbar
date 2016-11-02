@@ -31,8 +31,8 @@ namespace Labb4_BossesBilar
                     case ConsoleKey.D1: AddMenu(); loop = true; break;
                     case ConsoleKey.D2: ShowVehicleMenu(); loop = true; break;
                     case ConsoleKey.D3: RemoveVehicleMenu(); loop = true; break;
-                    case ConsoleKey.D4: BuyVehicle(); loop = true; break;
-                    case ConsoleKey.D5: SellVehicle(); loop = true; break;
+                    case ConsoleKey.D4: BuyVehicleMenu(); loop = true; break;
+                    case ConsoleKey.D5: SellVehicleMenu(); loop = true; break;
                     case ConsoleKey.D6: Environment.Exit(0); break;
                     default: Console.Clear(); loop = true; break;
                 }
@@ -111,7 +111,7 @@ namespace Labb4_BossesBilar
             } while (loop);
         }
 
-        public void BuyVehicle()
+        public void BuyVehicleMenu()
         {
             bool loop = false;
             do
@@ -135,7 +135,7 @@ namespace Labb4_BossesBilar
             } while (loop);
         }
 
-        public void SellVehicle()
+        public void SellVehicleMenu()
         {
             bool loop = false;
             do

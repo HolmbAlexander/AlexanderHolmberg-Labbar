@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labb4_BossesBilar
+namespace BasicInterface
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Menus menus = new Menus();
-            menus.WelcomeMenu();
+            Runtime runtime = new Runtime();
+            runtime.Start();
         }
     }
 }

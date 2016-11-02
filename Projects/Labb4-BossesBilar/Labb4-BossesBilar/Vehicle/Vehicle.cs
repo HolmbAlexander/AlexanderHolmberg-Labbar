@@ -2,24 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Labb4_BossesBilar
+namespace Labb4_BossesBilar.Vehicle
 {
-    public class Vehicle
+    class Vehicle
     {
-        public int Price { get; set; }
-        public string Model { get; set; }
-        public string Maker { get; set; }
-        public int Amount { get; set; }
-
-        public virtual string BasicInfo()
+        public class Vehicles
         {
-            return String.Format("Maker: {0}. | Model: {1}. | Price: {2}. | Amount: {3}.",
-                                 Maker,
-                                 Model,
-                                 Price,
-                                 Amount);
-        }
+            public int Price { get; set; }
+            public string Model { get; set; }
+            public string Maker { get; set; }
+            public int Amount { get; set; }
 
+            public virtual string BasicInfo()
+            {
+                return String.Format("Maker: {0}. | Model: {1}. | Price: {2}. | Amount: {3}.",
+                                     Maker,
+                                     Model,
+                                     Price,
+                                     Amount);
+            }
+
+        }
     }
 }
