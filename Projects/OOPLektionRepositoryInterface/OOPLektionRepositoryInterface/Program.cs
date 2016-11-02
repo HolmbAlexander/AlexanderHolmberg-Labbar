@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Console_Adventure
+namespace OOPLektionRepositoryInterface
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Menus menus = new Menus();
-            menus.WelcomeMenu();
+            var client = new Client();
+            client.Start();
         }
     }
 }
