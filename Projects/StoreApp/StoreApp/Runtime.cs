@@ -8,5 +8,9 @@ namespace StoreApp
 {
     class Runtime
     {
+        public void Start()
+        {
+
+        }
     }
 }

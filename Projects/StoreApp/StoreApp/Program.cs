@@ -10,6 +10,8 @@ namespace StoreApp
     {
         static void Main(string[] args)
         {
+            Runtime runtime = new Runtime();
+            runtime.Start();
         }
     }
 }

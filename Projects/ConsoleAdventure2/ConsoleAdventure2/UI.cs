@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StoreApp
+namespace ConsoleAdventure2
 {
-    interface ISellable
+    class UI
     {
-        int Price();
-        string ProductInformation();
     }
 }

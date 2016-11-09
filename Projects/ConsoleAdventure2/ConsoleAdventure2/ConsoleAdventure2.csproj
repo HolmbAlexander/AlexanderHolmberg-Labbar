@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{97A91F97-B420-4F37-A4DC-B221E74BA34F}</ProjectGuid>
+    <ProjectGuid>{76639906-BF4A-4F9F-9898-4A9D32724E9E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Console_Adventure</RootNamespace>
-    <AssemblyName>Console Adventure</AssemblyName>
+    <RootNamespace>ConsoleAdventure2</RootNamespace>
+    <AssemblyName>ConsoleAdventure2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Creature.cs" />
-    <Compile Include="Classes\Graphics.cs" />
-    <Compile Include="Classes\Human.cs" />
-    <Compile Include="Classes\Room.cs" />
-    <Compile Include="DataStores\IRepositories\IEnviroment.cs" />
-    <Compile Include="DataStores\IRepositories\INonPlayerCharacters.cs" />
-    <Compile Include="DataStores\Lists.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Runtime.cs" />
-    <Compile Include="UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

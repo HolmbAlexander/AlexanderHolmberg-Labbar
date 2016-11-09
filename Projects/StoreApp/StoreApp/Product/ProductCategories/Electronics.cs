@@ -5,7 +5,7 @@ using System.Text;
 
 namespace StoreApp
 {
-    public class Electronics
+    public class Electronics : Product
     {
         public int Insurance
         {

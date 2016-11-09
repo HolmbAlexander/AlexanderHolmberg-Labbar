@@ -5,7 +5,7 @@ using System.Text;
 
 namespace StoreApp
 {
-    public class Food
+    public class Food : Product
     {
         public int Expiredate
         {
