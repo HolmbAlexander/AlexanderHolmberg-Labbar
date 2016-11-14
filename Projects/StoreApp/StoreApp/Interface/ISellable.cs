@@ -8,7 +8,10 @@ namespace StoreApp
 {
     interface ISellable
     {
-        int Price();
-        string ProductInformation();
+        string Brand { get; set; }
+        string ProductType { get; set; }
+        int Price { get; set; }
+        int Quantity { get; set; }
+
     }
 }

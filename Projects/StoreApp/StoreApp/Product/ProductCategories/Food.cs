@@ -7,28 +7,20 @@ namespace StoreApp
 {
     public class Food : Product
     {
-        public int Expiredate
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public int Weight { get; set; }
 
-            set
-            {
-            }
+        public override string PrintProductCustomer()
+        {
+            return String.Format("{0} Size: {1}.",
+                                 base.PrintProductCustomer(),
+                                 Weight);
         }
 
-        public int Weight
+        public override string PrintProductAdmin()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+            return String.Format("0} Size: {1}.",
+                                 base.PrintProductAdmin(),
+                                 Weight);
         }
     }
 }

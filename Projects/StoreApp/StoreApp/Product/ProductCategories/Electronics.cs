@@ -7,28 +7,20 @@ namespace StoreApp
 {
     public class Electronics : Product
     {
-        public int Insurance
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public string Color { get; set; }
 
-            set
-            {
-            }
+        public override string PrintProductCustomer()
+        {
+            return String.Format("{0} Size: {1}.",
+                                 base.PrintProductCustomer(),
+                                 Color);
         }
 
-        public int Color
+        public override string PrintProductAdmin()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+            return String.Format("0} Size: {1}.",
+                                 base.PrintProductAdmin(),
+                                 Color);
         }
     }
 }

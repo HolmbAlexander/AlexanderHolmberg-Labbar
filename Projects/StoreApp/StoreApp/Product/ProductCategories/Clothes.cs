@@ -7,28 +7,20 @@ namespace StoreApp
 {
     public class Clothes : Product
     {
-        public int Size
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public string Size { get; set; }
 
-            set
-            {
-            }
+        public override string PrintProductCustomer()
+        {
+            return String.Format("{0} Size: {1}.",
+                                 base.PrintProductCustomer(),
+                                 Size);
         }
 
-        public int Gender
+        public override string PrintProductAdmin()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
+            return String.Format("{0} Size: {1}.",
+                                 base.PrintProductAdmin(),
+                                 Size);
         }
     }
 }

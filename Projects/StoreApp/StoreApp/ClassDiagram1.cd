@@ -3,28 +3,29 @@
   <Class Name="StoreApp.Product">
     <Position X="5.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAQAQAAAAAAAAAIAAAAAAAAAAIAAAAAgAABAAA=</HashCode>
       <FileName>Product\Product.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="StoreApp.Food">
     <Position X="5.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAABAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Product\ProductCategories\Food.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StoreApp.Clothes">
     <Position X="7.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAIAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>Product\ProductCategories\Clothes.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StoreApp.Electronics">
     <Position X="3.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Product\ProductCategories\Electronics.cs</FileName>
     </TypeIdentifier>
   </Class>
