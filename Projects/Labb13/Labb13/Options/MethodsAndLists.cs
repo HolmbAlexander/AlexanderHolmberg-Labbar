@@ -9,6 +9,13 @@ namespace Labb13.Options
 {
     class MethodsAndLists
     {
+        public event PrintMessage InvalidInput;
+
+        public void CheckGameHours(string message)
+        {
+            Console.WriteLine(message);
+        }
+
         List<Games> gamesList = new List<Games>
         {
             new Games { Title = "Witcher 3", Genre = "RPG", HoursPlayed = 87 },
@@ -20,6 +27,8 @@ namespace Labb13.Options
 
         public void AddGame()
         {
+            InvalidInput = CheckGameHours;
+
             Console.Write("Name of the game you would like to add: ");
             string title = Console.ReadLine();
             Console.WriteLine("Genre of the game: ");
@@ -37,17 +46,31 @@ namespace Labb13.Options
                 case ConsoleKey.D4: genre = "SIMULATOR"; break;
                 default: genre = "No genre"; break;
             }
-
+            int hours;
+            bool isInvalid = true;
+            
             Console.Write("Number of hours played: ");
-            int hours = int.Parse(Console.ReadLine());
-
-            Games addGame = new Games
+            isInvalid = int.TryParse(Console.ReadLine(), out hours);
+            if (hours < 0)
             {
-                Title = title,
-                Genre = genre,
-                HoursPlayed = hours
-            };
-            gamesList.Add(addGame);
+                isInvalid = false;
+            }
+            if (!isInvalid)
+            {
+                InvalidInput.Invoke("Invalid input. Could not save game!");
+                Console.ReadLine();
+            }
+
+            if (isInvalid)
+            {
+                Games addGame = new Games
+                {
+                    Title = title,
+                    Genre = genre,
+                    HoursPlayed = hours
+                };
+                gamesList.Add(addGame);
+            }
         }
 
         public void PrintGames()

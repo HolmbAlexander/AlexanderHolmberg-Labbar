@@ -9,5 +9,6 @@ namespace Labb13.Options
     class Delegate
     {
         public delegate bool GameFilter(Games games);
+        public delegate void PrintMessage(string message);
     }
 }

@@ -12,7 +12,6 @@ namespace Labb13
     class Runtime
     {
         MethodsAndLists manager = new MethodsAndLists();
-        GameFilters filtersManager = new GameFilters();
 
         GameFilter isOverFilter = GameFilters.isPlayedOver;
         GameFilter isUnderFilter = GameFilters.isPlayedUnder;
@@ -23,6 +22,7 @@ namespace Labb13
 
         public void Start()
         {
+            
             Menu();
         }
 
