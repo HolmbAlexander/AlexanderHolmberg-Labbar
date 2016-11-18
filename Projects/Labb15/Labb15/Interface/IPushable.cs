@@ -8,5 +8,6 @@ namespace Labb15
 {
     interface IPushable
     {
+        string Push();
     }
 }

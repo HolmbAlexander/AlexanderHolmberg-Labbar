@@ -22,13 +22,7 @@ namespace Labb13
 
         public void Start()
         {
-            
             Menu();
-        }
-
-        void Invoke()
-        {
-            
         }
 
         void Menu()

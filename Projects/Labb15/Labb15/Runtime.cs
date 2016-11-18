@@ -8,5 +8,9 @@ namespace Labb15
 {
     class Runtime
     {
+        public void Start()
+        {
+
+        }
     }
 }

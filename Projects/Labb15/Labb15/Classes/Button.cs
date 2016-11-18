@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labb15
+namespace Labb15.Classes
 {
-    class Program
+    class Button : IPushable
     {
-        static void Main(string[] args)
+        public string Push()
         {
-            Runtime runtime = new Runtime();
-            runtime.Start();
+            return "Everything explodes...";
         }
     }
 }

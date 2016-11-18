@@ -8,5 +8,9 @@ namespace Labb15
 {
     interface IVehicle
     {
+        string Start();
+        string Stop();
+        string Lock();
+        string Unlock();
     }
 }
