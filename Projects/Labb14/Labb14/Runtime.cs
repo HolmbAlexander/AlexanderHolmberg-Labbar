@@ -59,11 +59,12 @@ namespace Labb14
             int i = 1;
             foreach (var author in listManager.booksList)
             {
-                Console.WriteLine(i + ": " + "Author: {0}. Title: {1}. Pages: {2}. Realse date: {3}. ",
+                Console.WriteLine(i + ": " + "Author: {0}. Title: {1}. Pages: {2}. Realse date: {3}. Genre: {4}.",
                                  author.Author.Name,
                                  author.Title,
                                  author.Pages,
-                                 author.RealseDate.ToShortDateString()); i++;
+                                 author.RealseDate.ToShortDateString(),
+                                 author.Genre); i++;
             }
             foreach (var author in listManager.magazinesList)
             {
@@ -95,11 +96,12 @@ namespace Labb14
             {
                 foreach (var author in getBooks)
                 {
-                    Console.WriteLine("Author: {0}. Title: {1}. Pages: {2}. Realse date: {3}. ",
+                    Console.WriteLine("Author: {0}. Title: {1}. Pages: {2}. Realse date: {3}. Genre: {4}.",
                                      author.Author.Name,
                                      author.Title,
                                      author.Pages,
-                                     author.RealseDate.ToShortDateString());
+                                     author.RealseDate.ToShortDateString(),
+                                     author.Genre);
                 }
 
                 foreach (var author in getMagazines)

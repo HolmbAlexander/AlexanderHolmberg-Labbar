@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labb14
+namespace Labb15
 {
-    class AuthorManager
+    interface IPushable
     {
-
     }
 }

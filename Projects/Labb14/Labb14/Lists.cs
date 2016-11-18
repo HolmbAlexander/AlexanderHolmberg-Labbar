@@ -27,8 +27,8 @@ namespace Labb14
 
             booksList = new List<Book>
             {
-                new Book { Author = authorsList[0], Title = "Harry Potter and the Sorcerer's Stone", Pages = 231, RealseDate = new DateTime(1997,03,09) },
-                new Book { Author = authorsList[1], Title = "Fight Club", Pages = 258, RealseDate = new DateTime(1996,08,17) },
+                new Book { Author = authorsList[0], Title = "Harry Potter and the Sorcerer's Stone", Pages = 231, RealseDate = new DateTime(1997,03,09), Genre = "Fantasy" },
+                new Book { Author = authorsList[1], Title = "Fight Club", Pages = 258, RealseDate = new DateTime(1996,08,17), Genre = "Thriller" },
             };
 
             magazinesList = new List<Magazine>

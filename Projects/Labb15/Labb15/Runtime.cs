@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labb14
+namespace Labb15
 {
-    class Book : Publication
+    class Runtime
     {
-        public string Genre { get; set; }
-        public int Pages { get; set; }
     }
 }
