@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorManager.cs" />
     <Compile Include="Classes\Author.cs" />
     <Compile Include="Classes\Book Classes\Book.cs" />
     <Compile Include="Classes\Book Classes\Magazine.cs" />
