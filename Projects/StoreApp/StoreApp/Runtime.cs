@@ -36,7 +36,7 @@ namespace StoreApp
                         break;
 
                     case ConsoleKey.D3:
-
+                        AdminMenu();
                         break;
 
                     case ConsoleKey.D4:
@@ -73,6 +73,38 @@ namespace StoreApp
 
                     case ConsoleKey.D4:
                         shoopLoop = false;
+                        break;
+                }
+            }
+        }
+
+        void AdminMenu()
+        {
+            bool adminLoop = true;
+            while (adminLoop)
+            {
+                Console.Clear();
+                manager.ProductsMenu();
+                var input = Console.ReadKey(true).Key;
+                switch (input)
+                {
+                    case ConsoleKey.D1:
+                        manager.ShowInventoryAdmin("Clothes");
+                        manager.BuyClothes();
+                        break;
+
+                    case ConsoleKey.D2:
+                        manager.ShowInventoryAdmin("Electronics");
+                        manager.BuyElectronics();
+                        break;
+
+                    case ConsoleKey.D3:
+                        manager.ShowInventoryAdmin("Food");
+                        manager.BuyElectronics();
+                        break;
+
+                    case ConsoleKey.D4:
+                        adminLoop = false;
                         break;
                 }
             }

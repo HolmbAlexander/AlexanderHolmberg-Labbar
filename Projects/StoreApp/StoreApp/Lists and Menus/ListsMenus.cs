@@ -219,7 +219,7 @@ namespace StoreApp.Lists_and_Menus
             Console.Clear();
             ShowInventory("Electronics");
             Console.WriteLine("Enter the type of electronics you would like to buy: ");
-            int input = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
             Console.WriteLine("Type in the color you would like to have: ");
             string color = Console.ReadLine();
             Console.Write("Enter the number of units you would like to buy: ");
@@ -244,7 +244,7 @@ namespace StoreApp.Lists_and_Menus
             Console.Clear();
             ShowInventory("Food");
             Console.WriteLine("Enter the type of food you would like to buy: ");
-            int input = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
             Console.Write("Enter the number of units you would like to buy: ");
             int units = int.Parse(Console.ReadLine());
             ISellable single = inventoryList.OfType<Food>().SingleOrDefault(item => string.Equals(item.ProductType, input));
@@ -260,6 +260,59 @@ namespace StoreApp.Lists_and_Menus
             };
             shoppingCart.Add(addFood);
         }
+        #endregion
+
+        #region AddItemAdmin
+        public void AddClothes()
+        {
+            Console.Clear();
+            ShowInventoryAdmin("Clothes");
+            Console.Write("\nEnter the type of clothing you would like to add: ");
+            string input = Console.ReadLine();
+            Console.Write("Enter what size: ");
+            string addSize = Console.ReadLine();
+            Console.Write("Enter the number of units: ");
+            int units = int.Parse(Console.ReadLine());
+            ISellable single = inventoryList.OfType<Clothes>().SingleOrDefault(item => string.Equals(item.ProductType, input));
+            single.Quantity -= units;
+            int price = single.Price * units;
+            Runtime.totalPrice += price;
+            Clothes addClothes = new Clothes
+            {
+                ProductType = single.ProductType,
+                Brand = single.Brand,
+                Price = single.Price,
+                Quantity = units,
+                Size = addSize
+            };
+            shoppingCart.Add(addClothes);
+        }
+
+        public void AddElectronics()
+        {
+            Console.Clear();
+            ShowInventoryAdmin("Electronics");
+            Console.WriteLine("Enter the type of electronics you would like to add: ");
+            string input = Console.ReadLine();
+            Console.WriteLine("Type in the color: ");
+            string color = Console.ReadLine();
+            Console.Write("Enter the number of units you would like to buy: ");
+            int units = int.Parse(Console.ReadLine());
+            ISellable single = inventoryList.OfType<Electronics>().SingleOrDefault(item => string.Equals(item.ProductType, input));
+            single.Quantity -= units;
+            int price = single.Price * units;
+            Runtime.totalPrice += price;
+            Electronics addElectronics = new Electronics
+            {
+                ProductType = single.ProductType,
+                Brand = single.Brand,
+                Price = single.Price,
+                Quantity = units,
+                Color = color
+            };
+            shoppingCart.Add(addElectronics);
+        }
+
         #endregion
     }
 }
